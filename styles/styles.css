@@ -423,23 +423,23 @@ a:hover{
         display: grid;
         grid-template-columns: 1fr 1fr;
         max-width: 120rem;
-        margin: 0 auto;
+        
     }
     .contact__text{
         text-align: center;
         margin: auto;
-        margin-bottom: 60px;
-        padding-bottom: 140px;
+        margin-bottom: 40px;
+        padding-bottom: 90px;
     }
     .contact__image img{
-        height: 330px;
+        height: 300px;
         margin-bottom: 30px;
-        margin-left: 170px;
+        padding-left: 230px;
         border-radius: 20px;
     }
 }
 .contact__image img{
-    height: 270px;
+    height: 300px;
     margin-left: 13px;
     border-radius: 10px;
 }
