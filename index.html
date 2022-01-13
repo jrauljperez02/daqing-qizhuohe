@@ -4,111 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Inicio</title>
+
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/normalize.css">
-    <!--Google Fonts-->
+
+    <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/faf0364375.js" crossorigin="anonymous"></script>
+    <script defer src="scripts.js"></script>
+
 </head>
 <body>
-    <!--In this part we are going to collocate our header-->
-    <header class="navigation">
-        <div class="navigation__logo">
-            <h1>Daqing Qizhuohe Economic and Trade Co.</h1>
-        </div>
-        <div class="navigation__links">
-            <a href="index.html">Inicio</a>
-            <a href="spanish/about.html">Sobre Nosotros</a>
-            <a href="spanish/products.html">Productos</a>
-            <a href="spanish/contact.html">Contactos</a>
-        </div>
-        <div class="navigation__languages">
-            <a href="chinese/index.html">Chino</a>
-            <a href="index.html">Español</a>
-            <a href="english/index.html"> Inglés</a>
+
+    <header class="header">
+        <nav class="nav">
+          <a href="index.html" class="logo nav-link">Daqing Qizhuohe</a>
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            
+            <li class="nav-menu-item">
+              <a href="spanish/productos.html" class="nav-menu-link nav-link">Productos</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="spanish/contacto.html" class="nav-menu-link nav-link">Contactos</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="chinese/index.html" class="nav-menu-link nav-link nav-menu-link_active">Chino</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="index.html" class="nav-menu-link nav-link nav-menu-link_active">Español</a>
+              </li>
+            <li class="nav-menu-item">
+                <a href="english/index.html" class="nav-menu-link nav-link nav-menu-link_active">Inglés</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+
+
+    <header class="header2">
+        <div class="header__text">
+            <h2 class="no-margin">Daqing Qizhuohe Economic and Trade Co.</h2>
+            <p class="no-margin">Bienvenido</p>
         </div>
     </header>
 
-    <div class="body">
-        <!--image slider start-->
-        <div class="slider">
-            <div class="slides">
-                <!--radio buttons start-->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <!--radio buttons end-->
-                <!--slide image start-->
-                <div class="slide first">
-                    <img class="img1" src="img/slider1.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img class="img2" src="img/slider2.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img class="img3" src="img/slider3.jpg" alt="">
-                </div>
-                <!--slide image ends-->
-                <!--automatic navigation starts-->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                </div>
-                <!--automatic navigation ends-->
+
+    <div class="container">
+        <h3 class="text-center">Sobre Daqing Qizhuohe Economic and Trade Co.</h3>
+
+        <div class="about-us">
+            <div class="about-us__imagen">
+                <img src="img/slider2.jpg" alt="">
             </div>
-            <!--manual navigation start-->
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
+            <div class="about-us__text">
+                <p>Daqing Qizhuohe Economic and Trade Co., Ltd se 
+                    estableció en la ciudad de Daqing en 2021 bajo la 
+                    política nacional de revitalizar la agricultura del
+                    noreste. La compañia se dedica principalmente a importar 
+                    alfalfa y mung beans de alta calidad, diversos cultivos 
+                    alimentarios y aditivos. Ha establecido relaciones de 
+                    cooperación a largo plazo con empresas exportadoras de 
+                    alimentos y de cereales en Estados Unidos, Myanmar, Argentina, 
+                    entre otros. También con despacho de aduanas del puerto de 
+                    Qingdao, declaración de aduanas, ventas a empresas agrícolas, 
+                    de pastoreo y procesamiento y los principales mercados mayoristas 
+                    de todo el país. En 2022, la empresa ayuda en la política nacional 
+                    de revitalización de la industria láctea por medio de acciones de 
+                    desarrollo de alfalfa, piloto de reforma de granos y 
+                    alimentación, y experimentos de ganadería pastoral. Se ha negociado 
+                    cooperación comercial con reconocidas áreas productoras de alfalfa en 
+                    Italia, Argentina y otros países para aumentar las importaciones de alfalfa y 
+                    piensos de alta calidad para satisfacer la demanda interna. Qizhuohe 
+                    Economic and Trade Co., Ltd. tiene un equipo de gestión profesional práctico y 
+                    trabajador. El puerto de Tianjin y el puerto de Qingdao tienen un equipo de ventas 
+                    de más de 20 personas para brindar garantías de servicio a los clientes. 
+                    Los clientes nuevos pueden ponerse en contacto para realizar consultas y 
+                    proponer negociaciones.
+                    
+                </p>
+                
             </div>
-            <!--manual navigation ends-->
         </div>
-    <!--image slider end-->
     </div>
 
-    <!--Javascript-->
-    <script type="text/javascript">
-        var counter = 1;
-        setInterval(function(){
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if(counter>3){
-                counter = 1;
-            }
-        },2500);
-    </script>
-
-
-    <main class="container">
-        <h3>Productos</h3>
-        <h4>Proveer productos de calidad global</h4>
-        <div class="grid">
-            <img src="img/footer1.jpg" alt="">
-            <img src="img/footer2.jpg" alt="">
-            <p>Mung Beans</p>
-            <p>Alfalfa</p>
-        </div>
-    </main>
-
+    
     
     <footer class="footer">
-        <div class="footer__info">
-            <h3>Acerca de nosotros</h3>
-                <a href="spanish/about.html">Perfil de la compañia</a>
-                <a href="spanish/contact.html">Contacto</a>
-        </div>
-        <div class="footer__info">
-            <h3>Productos</h3>
-                <a href="#">Alfalfa</a>
-                <a href="#">Frijol mungo</a>
-        </div>
-        <div class="footer__info">
-            <h3>Contactanos</h3>
-                <a href="#">E-mail: hksantaluz@gmail.com</a>
+        <div class="container">
+            <div class="bar">
+                <a href="index.html"class="logo">
+                    <h1 class="no-margin text-center logo__name">Daqing Qizhuohe</h1>
+                </a>
+                <nav class="navigation">
+                    <a href="index.html" class="navigation__link">Sobre Nosotros</a>
+                    <a href="spanish/productos.html"   class="navigation__link">Productos</a>
+                    <a href="spanish/contacto.html" class="navigation__link">Contacto</a>
+                </nav>
+            </div>
         </div>
     </footer>
 

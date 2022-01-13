@@ -4,111 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>家</title>
+
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/normalize.css">
-    <!--Google Fonts-->
+
+    <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/faf0364375.js" crossorigin="anonymous"></script>
+    <script defer src="../scripts.js"></script>
+
 </head>
 <body>
-    <!--In this part we are going to collocate our header-->
-    <header class="navigation">
-        <div class="navigation__logo">
-            <h1>大庆琪卓和经贸有限公司</h1>
-        </div>
-        <div id="chinese" class="navigation__links">
-            <a href="index.html">開始</a>
-            <a href="about.html">關於我們</a>
-            <a href="products.html">產品</a>
-            <a href="contact.html">聯繫方式</a>
-        </div>
-        <div class="navigation__languages">
-            <a href="index.html">中國人</a>
-            <a href="../index.html">西班牙語</a>
-            <a href="../english/index.html">英語</a>
+
+    <header class="header">
+        <nav class="nav">
+          <a href="index.html" class="logo nav-link">大庆七卓河</a>
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            
+            <li class="nav-menu-item">
+              <a href="productos.html" class="nav-menu-link nav-link">產品</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="contacto.html" class="nav-menu-link nav-link">聯繫方式</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="index.html" class="nav-menu-link nav-link nav-menu-link_active">中國人</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="../index.html" class="nav-menu-link nav-link nav-menu-link_active">西班牙語</a>
+              </li>
+            <li class="nav-menu-item">
+                <a href="../english/index.html" class="nav-menu-link nav-link nav-menu-link_active">英語</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+
+
+    <header class="header2">
+        <div class="header__text">
+            <h2 class="no-margin">大庆琪卓和经贸有限公司</h2>
+            <p class="no-margin">欢迎</p>
         </div>
     </header>
 
-    <div class="body">
-        <!--image slider start-->
-        <div class="slider">
-            <div class="slides">
-                <!--radio buttons start-->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <!--radio buttons end-->
-                <!--slide image start-->
-                <div class="slide first">
-                    <img class="img1" src="../img/slider1.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img class="img2" src="../img/slider2.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img class="img3" src="../img/slider3.jpg" alt="">
-                </div>
-                <!--slide image ends-->
-                <!--automatic navigation starts-->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                </div>
-                <!--automatic navigation ends-->
+
+    <div class="container">
+        <h3 class="text-center">大庆琪卓和经贸有限公司</h3>
+
+        <div class="about-us">
+            <div class="about-us__imagen">
+                <img src="../img/slider2.jpg" alt="">
             </div>
-            <!--manual navigation start-->
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
+            <div class="about-us__text">
+                <p>大庆市琪卓和经贸有限公司在国家振兴东北的政策背景下，
+                    2021年创建于黑土地上的大庆市。 公司主营优质进口饲料、
+                    各种粮食作物、添加剂，与境外农产品资源丰富的美国、阿根廷、
+                    巴西、墨西哥等饲料和粮食出口企业建立了稳定的合作关系，进口资源丰富，
+                    所有货物在天津港和青岛港清关、 报关，面向全国各地农、牧场和加工企业及各大批发市场销售。 
+                    2022年公司响应国家振兴奶业、苜蓿发展行动、粮改饲试点、草牧业实验等政策，已经与意大利、
+                    阿根廷、 墨西哥等国家知名苜蓿产地洽谈合作业务，加大优质苜蓿、饲料等进口，
+                    满足国内需求。 琪卓和经贸有限公司拥有一只踏实、肯干的专业管理团队，天津港、
+                    青岛港拥有二十多人的销售团队为客户提供服务保障， 欢迎新老客户咨询洽谈
+                </p>
+                
             </div>
-            <!--manual navigation ends-->
         </div>
-    <!--image slider end-->
     </div>
 
-    <!--Javascript-->
-    <script type="text/javascript">
-        var counter = 1;
-        setInterval(function(){
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if(counter>3){
-                counter = 1;
-            }
-        },2500);
-    </script>
-
-
-    <main class="container">
-        <h4>提供全球优质产品</h4>
-            
-        <div class="grid">
-            <img src="../img/footer1.jpg" alt="">
-            <img src="../img/footer2.jpg" alt="">
-            <p>绿豆</p>
-            <p>苜蓿</p>
-        </div>
-    </main>
-
-
+    
+    
     <footer class="footer">
-        <div class="footer__info">
-            <h3>关于我们</h3>
-                <a href="about.html">公司简介</a>
-                <a href="contact.html">联系方式</a>
-        </div>
-        <div class="footer__info">
-            <h3>产品</h3>
-                <a href="#">苜蓿</a>
-                <a href="#">綠豆</a>
-        </div>
-        <div class="footer__info">
-            <h3>联系我们</h3>
-                <a href="#">E-mail: hksantaluz@gmail.com</a>
+        <div class="container">
+            <div class="bar">
+                <a href="index.html"class="logo">
+                    <h1 class="no-margin text-center logo__name">大庆七卓河</h1>
+                </a>
+                <nav class="navigation">
+                    <a href="index.html" class="navigation__link">關於我們</a>
+                    <a href="productos.html"   class="navigation__link">產品</a>
+                    <a href="contacto.html" class="navigation__link">聯繫方式</a>
+                </nav>
+            </div>
         </div>
     </footer>
 
